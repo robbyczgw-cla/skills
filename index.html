@@ -3,145 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills by Robby</title>
+    <title>Robby's Skills | ClawdHub</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: system-ui, -apple-system, sans-serif;
-            background: #111;
-            color: #ccc;
-            padding: 40px 20px;
-            max-width: 700px;
+            background: #0d0d0d;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            line-height: 1.5;
+            padding: 60px 24px;
+        }
+        
+        header {
+            margin-bottom: 48px;
         }
         
         h1 {
+            font-size: 2rem;
+            font-weight: 600;
             color: #fff;
-            font-size: 1.5rem;
-            font-weight: 500;
             margin-bottom: 8px;
         }
         
         .subtitle {
-            color: #666;
-            margin-bottom: 40px;
+            color: #888;
+            font-size: 1.1rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
         
         .skill {
-            border-bottom: 1px solid #222;
-            padding: 20px 0;
+            background: #161616;
+            border: 1px solid #252525;
+            border-radius: 12px;
+            padding: 20px 24px;
+            transition: border-color 0.2s;
         }
         
-        .skill:last-child { border-bottom: none; }
+        .skill:hover {
+            border-color: #444;
+        }
         
-        .skill-header {
+        .skill-top {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 6px;
+            align-items: center;
+            margin-bottom: 8px;
         }
         
         .skill-name {
-            color: #fff;
+            font-size: 1.1rem;
             font-weight: 500;
-        }
-        
-        .skill-name:hover { color: #8b5cf6; }
-        
-        .version {
-            color: #555;
-            font-size: 0.85rem;
-            font-family: monospace;
-        }
-        
-        .skill-desc {
-            color: #777;
-            font-size: 0.9rem;
-        }
-        
-        a {
-            color: inherit;
+            color: #fff;
             text-decoration: none;
         }
         
-        .install {
-            margin-top: 40px;
-            padding: 20px;
-            background: #161616;
-            border-radius: 6px;
+        .skill-name:hover {
+            color: #a78bfa;
         }
         
-        .install code {
-            color: #8b5cf6;
+        .skill-meta {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .version {
+            background: #252525;
+            color: #888;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
             font-family: monospace;
         }
         
-        footer {
-            margin-top: 40px;
-            color: #444;
+        .stats {
+            color: #555;
             font-size: 0.85rem;
         }
         
-        footer a { color: #666; }
-        footer a:hover { color: #999; }
+        .skill-desc {
+            color: #999;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .install {
+            margin-top: 48px;
+            text-align: center;
+            padding: 32px;
+            background: #161616;
+            border-radius: 12px;
+        }
+        
+        .install p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+        
+        .install code {
+            display: inline-block;
+            background: #0d0d0d;
+            border: 1px solid #252525;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #a78bfa;
+        }
+        
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #777;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            color: #a78bfa;
+        }
     </style>
 </head>
 <body>
-    <h1>Skills by Robby</h1>
-    <p class="subtitle">Clawdbot skills. Graz, AT.</p>
-    
-    <div class="skills">
-        <div class="skill">
-            <div class="skill-header">
-                <a href="https://clawdhub.com/skills/elevenlabs-voices" class="skill-name">elevenlabs-voices</a>
-                <span class="version">1.1.1</span>
+    <div class="container">
+        <header>
+            <h1>Robby's Skills</h1>
+            <p class="subtitle">Clawdbot skills from Graz, Austria</p>
+        </header>
+        
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://clawdhub.com/skills/elevenlabs-voices" class="skill-name">elevenlabs-voices</a>
+                    <div class="skill-meta">
+                        <span class="stats">★ 1 · ↓9</span>
+                        <span class="version">v1.1.1</span>
+                    </div>
+                </div>
+                <p class="skill-desc">High-quality TTS with 18 voices, Python script, and presets for different use cases.</p>
             </div>
-            <p class="skill-desc">18 TTS voices, Python script, presets</p>
+            
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://clawdhub.com/skills/web-search-plus" class="skill-name">web-search-plus</a>
+                    <div class="skill-meta">
+                        <span class="stats">↓41</span>
+                        <span class="version">v2.1.1</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Unified search with auto-routing between Serper, Tavily, and Exa based on query intent.</p>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://clawdhub.com/skills/personas" class="skill-name">personas</a>
+                    <div class="skill-meta">
+                        <span class="stats">★ 1 · ↓26</span>
+                        <span class="version">v1.0.9</span>
+                    </div>
+                </div>
+                <p class="skill-desc">31 AI personalities you can switch mid-conversation. Dev, Chef, Doctor, and more.</p>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://clawdhub.com/skills/smart-followups" class="skill-name">smart-followups</a>
+                    <div class="skill-meta">
+                        <span class="version">v1.0.4</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Generates contextual follow-up suggestions with Quick, Deep Dive, and Related buttons.</p>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://clawdhub.com/skills/sports-ticker" class="skill-name">sports-ticker</a>
+                    <div class="skill-meta">
+                        <span class="version">v2.1.2</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Live scores via free ESPN API. Soccer, NFL, NBA, NHL, MLB, and F1 support.</p>
+            </div>
         </div>
         
-        <div class="skill">
-            <div class="skill-header">
-                <a href="https://clawdhub.com/skills/web-search-plus" class="skill-name">web-search-plus</a>
-                <span class="version">2.1.1</span>
-            </div>
-            <p class="skill-desc">Multi-provider search with auto-routing</p>
+        <div class="install">
+            <p>Install any skill with:</p>
+            <code>clawdhub install skill-name</code>
         </div>
         
-        <div class="skill">
-            <div class="skill-header">
-                <a href="https://clawdhub.com/skills/personas" class="skill-name">personas</a>
-                <span class="version">1.0.9</span>
-            </div>
-            <p class="skill-desc">31 AI personalities, switch mid-chat</p>
-        </div>
-        
-        <div class="skill">
-            <div class="skill-header">
-                <a href="https://clawdhub.com/skills/smart-followups" class="skill-name">smart-followups</a>
-                <span class="version">1.0.4</span>
-            </div>
-            <p class="skill-desc">Contextual follow-up suggestions</p>
-        </div>
-        
-        <div class="skill">
-            <div class="skill-header">
-                <a href="https://clawdhub.com/skills/sports-ticker" class="skill-name">sports-ticker</a>
-                <span class="version">2.1.2</span>
-            </div>
-            <p class="skill-desc">Live scores via ESPN. Soccer, NFL, NBA, F1</p>
-        </div>
+        <footer>
+            <a href="https://clawdhub.com/u/robbyczgw-cla">ClawdHub Profile</a>
+            <a href="https://github.com/robbyczgw-cla">GitHub</a>
+        </footer>
     </div>
-    
-    <div class="install">
-        <code>clawdhub install &lt;skill-name&gt;</code>
-    </div>
-    
-    <footer>
-        <a href="https://github.com/robbyczgw-cla">github</a> · 
-        <a href="https://clawdhub.com/u/robbyczgw-cla">clawdhub</a>
-    </footer>
 </body>
 </html>
-<!-- Sun Jan 25 09:06:46 AM UTC 2026 -->
