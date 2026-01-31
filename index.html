@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robby's Skills | ClawdHub</title>
+    <title>OpenClaw Skills | robbyczgw-cla</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -54,6 +54,10 @@
             border-color: #444;
         }
         
+        .skill.new {
+            border-color: #a78bfa;
+        }
+        
         .skill-top {
             display: flex;
             justify-content: space-between;
@@ -87,9 +91,14 @@
             font-family: monospace;
         }
         
-        .stats {
-            color: #555;
-            font-size: 0.85rem;
+        .new-badge {
+            background: #a78bfa;
+            color: #0d0d0d;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
         }
         
         .skill-desc {
@@ -142,17 +151,37 @@
 <body>
     <div class="container">
         <header>
-            <h1>Robby's Skills</h1>
-            <p class="subtitle">Clawdbot skills from Graz, Austria</p>
+            <h1>🦎 OpenClaw Skills</h1>
+            <p class="subtitle">Skills for OpenClaw by robbyczgw-cla</p>
         </header>
         
         <div class="skills">
+            <div class="skill new">
+                <div class="skill-top">
+                    <a href="https://www.clawhub.ai/skills/agent-chronicle" class="skill-name">📜 agent-chronicle</a>
+                    <div class="skill-meta">
+                        <span class="new-badge">New!</span>
+                        <span class="version">v0.2.0</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Chronicle your AI's journey - capture experiences, quotes, curiosities, decisions, and relationships from the agent's perspective.</p>
+            </div>
+            
             <div class="skill">
                 <div class="skill-top">
-                    <a href="https://clawdhub.com/skills/elevenlabs-voices" class="skill-name">elevenlabs-voices</a>
+                    <a href="https://www.clawhub.ai/skills/topic-monitor" class="skill-name">🔍 topic-monitor</a>
                     <div class="skill-meta">
-                        <span class="stats">★ 1 · ↓9</span>
-                        <span class="version">v2.0.0</span>
+                        <span class="version">v1.0.0</span>
+                    </div>
+                </div>
+                <p class="skill-desc">Monitor topics proactively and get alerts when important developments occur.</p>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-top">
+                    <a href="https://www.clawhub.ai/skills/elevenlabs-voices" class="skill-name">🎙️ elevenlabs-voices</a>
+                    <div class="skill-meta">
+                        <span class="version">v2.0.5</span>
                     </div>
                 </div>
                 <p class="skill-desc">Complete TTS toolkit: 18 voices, 32 languages, streaming, SFX, batch processing, voice design, and cost tracking.</p>
@@ -160,10 +189,9 @@
             
             <div class="skill">
                 <div class="skill-top">
-                    <a href="https://clawdhub.com/skills/web-search-plus" class="skill-name">web-search-plus</a>
+                    <a href="https://www.clawhub.ai/skills/web-search-plus" class="skill-name">🌐 web-search-plus</a>
                     <div class="skill-meta">
-                        <span class="stats">↓41</span>
-                        <span class="version">v2.1.1</span>
+                        <span class="version">v2.2.5</span>
                     </div>
                 </div>
                 <p class="skill-desc">Unified search with auto-routing between Serper, Tavily, and Exa based on query intent.</p>
@@ -171,10 +199,9 @@
             
             <div class="skill">
                 <div class="skill-top">
-                    <a href="https://clawdhub.com/skills/personas" class="skill-name">personas</a>
+                    <a href="https://www.clawhub.ai/skills/personas" class="skill-name">🎭 personas</a>
                     <div class="skill-meta">
-                        <span class="stats">★ 1 · ↓26</span>
-                        <span class="version">v1.0.9</span>
+                        <span class="version">v1.2.1</span>
                     </div>
                 </div>
                 <p class="skill-desc">31 AI personalities you can switch mid-conversation. Dev, Chef, Doctor, and more.</p>
@@ -182,9 +209,9 @@
             
             <div class="skill">
                 <div class="skill-top">
-                    <a href="https://clawdhub.com/skills/smart-followups" class="skill-name">smart-followups</a>
+                    <a href="https://www.clawhub.ai/skills/smart-followups" class="skill-name">💡 smart-followups</a>
                     <div class="skill-meta">
-                        <span class="version">v1.0.4</span>
+                        <span class="version">v1.0.8</span>
                     </div>
                 </div>
                 <p class="skill-desc">Generates contextual follow-up suggestions with Quick, Deep Dive, and Related buttons.</p>
@@ -192,9 +219,9 @@
             
             <div class="skill">
                 <div class="skill-top">
-                    <a href="https://clawdhub.com/skills/sports-ticker" class="skill-name">sports-ticker</a>
+                    <a href="https://www.clawhub.ai/skills/sports-ticker" class="skill-name">⚽ sports-ticker</a>
                     <div class="skill-meta">
-                        <span class="version">v2.1.2</span>
+                        <span class="version">v2.1.4</span>
                     </div>
                 </div>
                 <p class="skill-desc">Live scores via free ESPN API. Soccer, NFL, NBA, NHL, MLB, and F1 support.</p>
@@ -203,12 +230,13 @@
         
         <div class="install">
             <p>Install any skill with:</p>
-            <code>clawdhub install skill-name</code>
+            <code>clawhub install skill-name</code>
         </div>
         
         <footer>
-            <a href="https://clawdhub.com/u/robbyczgw-cla">ClawdHub Profile</a>
+            <a href="https://www.clawhub.ai/u/robbyczgw-cla">ClawHub Profile</a>
             <a href="https://github.com/robbyczgw-cla">GitHub</a>
+            <a href="https://openclaw.ai">OpenClaw</a>
         </footer>
     </div>
 </body>
